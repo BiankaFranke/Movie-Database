@@ -1,0 +1,37 @@
+.sortBtn {
+    padding: 1rem 4rem;
+    margin: 0rem 1rem 1rem 0rem;
+    color: #d65a31;
+    background-color: #222831;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.sortBtn:hover {
+    background-color: #d65a31;
+    color: #FFFFFF;
+}
+
+.reload:hover {
+    border: 2px solid #222831;
+}
+
+.database {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: 0rem 1.5rem;
+}
+
+.SearchInput {
+    display: flex;
+    justify-content: center;
+}
+
+.SearchInput .InputSearch {
+    margin-right: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    border: 2px solid #d65a31;
+}

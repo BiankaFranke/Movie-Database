@@ -1,0 +1,20 @@
+.Movie {
+    background-color: #222831;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+}
+
+.Movie h4 {
+    color: #d65a31;
+}
+
+.Movie .GenreDiv {
+    margin: 0.3rem;
+}
