@@ -5,7 +5,6 @@ import movies from '../Data';
 
 // Import Components
 import MovieCard from '../MovieCard/MovieCard';
-import Search from '../Search/Serach';
 
 // Import CSS
 import './Sortbar.css';
@@ -74,13 +73,6 @@ const Sortbar = () => {
         }))
     };
 
-    // const MovieSearch = () => {
-    //     let input = document.querySelector('#search');
-    //     setMoviesSorted([...moviesSorted].sort((movies) => {
-    //         return movies.title.includes(input.value);
-    //     }))
-    // };
-
     const Reload = () => {
         document.location.reload();
     };
@@ -95,17 +87,13 @@ const Sortbar = () => {
             <button className='sortBtn' onClick={ZA}>Z-A</button>
             <button className='sortBtn' onClick={Genre}>Genre</button>
             <button className='sortBtn reload' onClick={Reload}>Reload</button>
-            
-            {/* <div className='SearchInput'>
-                <input type="search" name="search" id="search" className='InputSearch' placeholder='Search a Movie..'/>
-                <button className='sortBtn reload' onClick={MovieSearch}>Search</button>
-            </div> */}
 
         </div>
 
         <div className="database">
             {moviesSorted.map((movie, index) => (
-            <MovieCard key={'MovieID' + index} title={movie.title} year={movie.year} director={movie.director} duration={movie.duration} genre={movie.genre} rate={movie.rate} />    
+            <MovieCard key={'MovieID' + index} title={movie.title} year={movie.year} director={movie.director} duration={movie.duration} genre={movie.genre} rate={movie.rate} />
+            // <MovieCard key={'MovieID' + index} {...movie} />     
             )
             )}
         </div>
